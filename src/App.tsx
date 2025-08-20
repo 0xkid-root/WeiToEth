@@ -179,8 +179,19 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                <TrendingUp className="w-6 h-6 text-white" />
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center bg-gradient-to-r from-blue-600 to-purple-600 shadow">
+                {/* Custom Ethereum SVG Logo */}
+                <svg viewBox="0 0 40 40" fill="none" className="w-7 h-7" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="eth-gradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                      <stop stopColor="#60A5FA"/>
+                      <stop offset="1" stopColor="#A78BFA"/>
+                    </linearGradient>
+                  </defs>
+                  <polygon points="20,4 36,20 20,36 4,20" fill="url(#eth-gradient)" />
+                  <polygon points="20,10 30,20 20,30 10,20" fill="#fff" fillOpacity="0.8"/>
+                  <circle cx="20" cy="20" r="6" fill="url(#eth-gradient)" opacity="0.7"/>
+                </svg>
               </div>
               <div>
                 <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">

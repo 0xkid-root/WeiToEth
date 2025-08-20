@@ -98,35 +98,6 @@ const SEOContent: React.FC = () => {
 
       <section className="mb-12">
         <h2 className="text-3xl font-bold text-gray-900 mb-6">
-          Why Choose ETH Converter Pro?
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="text-center">
-            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span className="text-2xl">⚡</span>
-            </div>
-            <h3 className="text-lg font-semibold mb-2">Real-Time Data</h3>
-            <p className="text-gray-600">Live prices from CoinGecko API updated every 30 seconds</p>
-          </div>
-          <div className="text-center">
-            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span className="text-2xl">🎯</span>
-            </div>
-            <h3 className="text-lg font-semibold mb-2">Accurate Conversions</h3>
-            <p className="text-gray-600">Precise calculations for all Ethereum units and fiat currencies</p>
-          </div>
-          <div className="text-center">
-            <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span className="text-2xl">📱</span>
-            </div>
-            <h3 className="text-lg font-semibold mb-2">Mobile Friendly</h3>
-            <p className="text-gray-600">Responsive design works perfectly on all devices</p>
-          </div>
-        </div>
-      </section>
-
-      <section className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6">
           Frequently Asked Questions
         </h2>
         <div className="space-y-6">
@@ -167,6 +138,30 @@ const SEOContent: React.FC = () => {
           </div>
         </div>
       </section>
+
+      <footer className="mt-12 border-t pt-6 text-center text-gray-600">
+        <p>
+          Created by{' '}
+          <a
+            href="https://github.com/0xkid-root"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            0xkid-root
+          </a>
+          . Explore more projects on{' '}
+          <a
+            href="https://github.com/0xkid-root"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            GitHub
+          </a>
+           
+        </p>
+      </footer>
     </div>
   );
 };
